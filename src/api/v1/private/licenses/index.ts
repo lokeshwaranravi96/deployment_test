@@ -8,6 +8,7 @@ const licenses = async (fastify: FastifyInstance, _opts: any, done: any) => {
   fastify.get(
     "/list",
     { schema: schema.licensesListSchema },
+
     handler.LICENSES_LIST
   );
 
